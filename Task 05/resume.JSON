@@ -1,0 +1,56 @@
+{
+    "basics": {
+      "name": "NIthish P",
+      "email": "nithishluhar2606@gmail.com",
+      "phone": "8667623552",
+      "degree": "B.E",
+      "location": {
+        "address": "karrapakam",
+        "city": "Chennai",
+        "country": "INDIA",
+      },
+      "profiles": [
+        {
+          "network": " LinkedIn",
+          "username": "nithish P",
+          "url": "https://www.linkedin.com/in/nithish-palanivel-2737a61ab/"
+        }
+      ]
+    },
+   
+
+    "education": [
+      {
+        "institution": "auxilium matric school",
+        "area": "Cuddalor",
+        "studyType": "State Board",
+       
+        "Persenage": "94%",
+       
+      }
+    ],
+    
+    "skills": [
+      {
+        "name": "Coding",
+        "level": "Intermediate",
+        "keywords": [
+          "java"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "Tamil",
+        "fluency": "good"
+      }
+    ],
+    "interests": [
+      {
+        "name": "Sports",
+        "keywords": [
+          "Football"
+        ]
+      }
+    ]
+  }
