@@ -35,16 +35,16 @@ class Circle {
   
   
   const myCircle = new Circle();
-  console.log(myCircle.getRadius());                // Output: 1
-  console.log(myCircle.getColor());                 // Output: red
-  console.log(myCircle.getArea());                  // Output: 3.141592653589793
-  console.log(myCircle.getCircumference());         // Output: 6.283185307179586
-  console.log(myCircle.toString());                 // Output: Circle: radius=1, color=red
+  console.log(myCircle.getRadius());               
+  console.log(myCircle.getColor());                 
+  console.log(myCircle.getArea());                  
+  console.log(myCircle.getCircumference());         
+  console.log(myCircle.toString());                
   
   myCircle.setRadius(2.5);
   myCircle.setColor("blue");
-  console.log(myCircle.getRadius());                // Output: 2.5
-  console.log(myCircle.getColor());                 // Output: blue
-  console.log(myCircle.getArea());                  // Output: 19.634954084936208
-  console.log(myCircle.getCircumference());         // Output: 15.707963267948966
+  console.log(myCircle.getRadius());                
+  console.log(myCircle.getColor());                
+  console.log(myCircle.getArea());                  
+  console.log(myCircle.getCircumference());        
   console.log(myCircle.toString()); 
