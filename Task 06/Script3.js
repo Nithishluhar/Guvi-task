@@ -10,8 +10,8 @@ class Person {
     }
   
     set name(name) {
-      this._name = name;
-    }
+     this._name = name;
+   }
   
     get age() {
       return this._age;
@@ -37,8 +37,8 @@ class Person {
   console.log(myPerson.age);  
   console.log(myPerson.email); 
 
-  myPerson.name = "Nithish";
-  myPerson.email = "nithishluhar2606@gmail.com";
+  myPerson.name = " Rahul";
+  myPerson.email = "rahulluhar2606@gmail.com";
   
   console.log(myPerson.name);  
   console.log(myPerson.email);
