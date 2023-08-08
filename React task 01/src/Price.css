@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Teko:wght@400;600&display=swap");
+
+body{
+    background-color: #E39774;
+    height: 100vh;
+
+}
+.parent{
+ margin: 10px;
+    padding:70px;
+    display: flex;
+     flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+   
+}
+.card{
+    background-color: #FFFCFF;
+    border-radius: 20px;
+    padding: 5px;
+
+   
+}
+h4{
+    text-align: center;
+    padding-top: 5px;
+    font-family:Chivo Mono;
+    color: rgb(188, 177, 177);
+}
+h1{
+    text-align: center;
+    font-family:Chivo Mono;
+}
+.fa-ul{
+    width: 250px;
+    
+    padding: 7px;
+   
+}
+li{
+    padding: 7px;
+    font-size: small;
+    
+    text-align: left;
+     
+}
+.text-muted{
+    color: rgb(173, 161, 161);
+}
+
+
+button{
+   margin-left: 27px;
+   margin-bottom: 30px;
+   height: 48px;
+    width: 48px;
+    background-color: rgb(53, 44, 44);
+    color: whitesmoke;
+   font-family:'Times New Roman', Times, serif;
+    font-family:Chivo Mono;
+}
+.bnt{
+    width: 250px;
+    border-radius: 40px;
+    
+}
+.card:hover{
+    background-color: aqua;
+    box-shadow: 0 0 20px rgb(251, 249, 249);
+    transform: scale(1.1);
+    z-index: 1;
+    border-radius: 25px;
+}
+.bnt:hover{
+    background-color: #d58560;
+}
