@@ -13,8 +13,10 @@ const [statusFilter, setStatusFilter] = useState('all');
 
 const updatedList =  (list) =>{
   setData(list);
+  setTaskName('');
+  setTaskDescription('')
   setReRender(!reRender );
-  console.log("updated list");
+  // console.log("updated list");
 }
 const handleUpdateStatus = (index, newStatus) => {
   const updatedTodos = data.map((val, i) =>

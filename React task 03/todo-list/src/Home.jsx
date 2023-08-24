@@ -31,15 +31,15 @@ console.log("hiiii",newData);
 updatedList([...newData])
 
 // clear  
+
 todo_description.value ="";
 todo_name.value ="";
-
 
 }
 const updatebtn =()=>{
   handleUpdateTodo()
-}
 
+}
 console.log(taskDescription);
 
   return (
