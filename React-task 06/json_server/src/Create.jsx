@@ -10,10 +10,9 @@ function Create() {
   });
   const navigate = useNavigate();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    axios
-      .post("http://localhost:3000/user", inputs)
+   await axios.post("https://64f17bf40e1e60602d23d638.mockapi.io/users", inputs)
       // .then(res => console.log("Success", res))
       .then((res) => {setInputs(res)
         console.log("Success", res);
@@ -60,6 +59,20 @@ function Create() {
             id="phone"
             placeholder="number"
             onChange={(e) => setInputs({ ...inputs, phone: e.target.value })}
+          />
+        </div>
+        <br />
+        <div class="mb-3">
+          <label htmlFor="email" class="label">
+            City:
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            id="city"
+            placeholder="city"
+            value={inputs && inputs.city}
+            onChange={(e) => setInputs({ ...inputs, city: e.target.value })}
           />
         </div>
         <br />

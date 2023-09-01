@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 
 function Home() {
-    const url = "http://localhost:3000/user";
+    const url = "https://64f17bf40e1e60602d23d638.mockapi.io/users";
   const [post, setPost] = React.useState(null);
 
   React.useEffect(() => {
@@ -17,9 +17,9 @@ function Home() {
   //   console.log(post);
 
   const handleDelete = (id)=>{
-    const confirm = window.confirm('Would you like to Delete')
+    const confirm = window.confirm('Would you like to Delete'+ id)
     if (confirm){
-      axios.delete('http://localhost:3000/user/' + id)
+      axios.delete('https://64f17bf40e1e60602d23d638.mockapi.io/users/'+ id)
       .then((res)=>{
              location.reload();
       }).catch(err => console.log(err))
@@ -37,6 +37,7 @@ function Home() {
               <th>Name</th> <br />
               <th>Email</th> <br />
               <th>Phone_No</th> <br />
+              <th>City</th> <br />
               <th>Action</th> <br />
             </tr>
           </thead>
@@ -52,7 +53,8 @@ function Home() {
                   <br />
                   <td>{item.phone}</td>
                   <br />
-
+                  <td>{item.city}</td>
+                  <br />
                   <td>
                       <Link to={`/read/${item.id}`} className="btn btn-sm btn-primary me-2">Read</Link>
                       <Link to={`/update/${item.id}`} className="btn btn-sm btn-primary me-2">Update</Link>

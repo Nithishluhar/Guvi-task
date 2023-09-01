@@ -8,11 +8,12 @@ function Update() {
     name: "",
     email: "",
     phone: "",
+    city : ""
   });
 
   React.useEffect(() => {
     axios
-      .get("http://localhost:3000/user/" + id)
+      .get("https://64f17bf40e1e60602d23d638.mockapi.io/users/" + id)
       .then((response) => setInputs(response.data))
       .catch((err) => console.log(err));
   }, []);
@@ -23,7 +24,7 @@ function Update() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .put("http://localhost:3000/user/" +id, inputs)
+      .put("https://64f17bf40e1e60602d23d638.mockapi.io/users/" + id, inputs)
       // .then(res => console.log("Success", res))
       .then((res) => { 
         console.log("Success", res);
@@ -72,6 +73,20 @@ function Update() {
             placeholder="number"
             value={inputs && inputs.phone}
             onChange={(e) => setInputs({ ...inputs, phone: e.target.value })}
+          />
+        </div>
+        <br />
+        <div class="mb-3">
+          <label htmlFor="email" class="label">
+            City:
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            id="city"
+            placeholder="city"
+            value={inputs && inputs.city}
+            onChange={(e) => setInputs({ ...inputs, city: e.target.value })}
           />
         </div>
         <br />

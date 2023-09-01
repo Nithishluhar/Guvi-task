@@ -8,7 +8,7 @@ function Read() {
 
   React.useEffect(() => {
     axios
-      .get("http://localhost:3000/user/" + id)
+      .get("https://64f17bf40e1e60602d23d638.mockapi.io/users/" + id)
       .then((response) => setData(response.data))
       .catch((err) => console.log(err));
   }, []);
@@ -24,6 +24,7 @@ function Read() {
         <div className="card-body">
           <h6 className="d-flex ">Email: {data && data.email}</h6>
           <p className="card-text">Phone_no: {data && data.phone}</p>
+          <h6 className="d-flex ">City: {data && data.city}</h6>
 
           <Link to={`/update/${id}`} className="btn btn-primary ms-3">
             Edit
