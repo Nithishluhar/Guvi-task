@@ -121,16 +121,16 @@ function AddToCart() {
                       </div>
                       <hr />
                       <div className="Box">
-                        <h5>SUBTOTAL:</h5>
+                        <h5>SUB TOTAL :</h5>
                         <span className="span1">₹ {subprice[index]}</span>
                       </div>
                       <div className="Box">
-                        <h5>DISCOUNT:</h5>
+                        <h5>SHIPPING :</h5>
                         <span className="span2">FREE 🪄</span>
                       </div>
                       <hr />
                       <div className="Box">
-                        <h5>TOTAL:</h5>
+                        <h5>TOTAL :</h5>
                         <span className="span3">₹ {subprice[index]}</span>
                       </div>
                     </div>
@@ -142,8 +142,8 @@ function AddToCart() {
       </div>
       <br />
       <div className="footer">
-        <h4>🛒Totel Cart Price :₹ {price}</h4>
-        <h4>Totel Quantity : {quantity}⌛</h4>
+        <h4>🛒 Totel Cart Price : ₹ {price}</h4>
+        <h4>® Totel Quantity : {quantity}⌛</h4>
       </div>
     </>
   );
