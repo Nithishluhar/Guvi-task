@@ -9,10 +9,9 @@ function DataProvider({ children }) {
 
   const newData = list.map((item) => {
     return { ...Q, ...item };
-    
+
     //easy way
     // return { ...item, quantity: 1};
-
   });
 
   // console.log(newData);
