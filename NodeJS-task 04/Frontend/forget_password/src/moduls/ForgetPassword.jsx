@@ -48,9 +48,10 @@ function ForgetPassword() {
             </div>
           </form>
         </div>
-      </div>
+      </div>// 14.20.1"
     </>
   )
 }
 
 export default ForgetPassword
+
