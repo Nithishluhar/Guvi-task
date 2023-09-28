@@ -7,14 +7,17 @@ import axios from "axios";
 function ResetPassword() {
   const [password, setPassword] = useState();
   const navigate = useNavigate();
-const {id, token} = useParams()
+  const { id, token } = useParams();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post(`https://forget-password-7q2c.onrender.com/${id}/${token}`, {
-        password,
-      });
+      const response = await axios.post(
+        `https://forget-password-7q2c.onrender.com/reset_password/${id}/${token}`,
+        {
+          password,
+        }
+      );
       if (response.data.status === "success") {
         navigate("/login");
       }
@@ -31,7 +34,7 @@ const {id, token} = useParams()
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
               <label htmlFor="password" className="form-label">
-              Password:
+                Password:
               </label>
               <input
                 type="password"

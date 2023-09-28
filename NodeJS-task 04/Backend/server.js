@@ -90,7 +90,7 @@ app.post('/reset', async (req, res) => {
           console.log(error);
         } else {
             console.log('Email sent: ' + info.response);
-          return res.send({status: "success"})
+          return res.send({status: "Please Verify your Email"})
         }
       });
 

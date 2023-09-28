@@ -7,13 +7,15 @@ import axios from "axios";
 function ForgetPassword() {
     const [email, setEmail] = useState();
     const navigate = useNavigate();
-  
+  const [mess, setMess] = useState("");
+
     const handleSubmit = async(event) => {
       event.preventDefault();
       try {
           const response = await axios.post('https://forget-password-7q2c.onrender.com/reset',{ email});
           if (response.data.status === "success") {
-            navigate('/login')
+            setMess(response.data.status)
+            // navigate('/login')
           }
          
       } catch (error) {
@@ -41,6 +43,7 @@ function ForgetPassword() {
             </div>
             <div style={{ textAlign: "center" }}>
               <button className="btn btn-primary " type="submit">Send</button>
+              {mess&&<div>{mess}</div>}
               <br /><br />
               <Link to="/register" className="btn btn-danger">
                 Regiter!
@@ -48,7 +51,7 @@ function ForgetPassword() {
             </div>
           </form>
         </div>
-      </div>// 14.20.1"
+      </div>
     </>
   )
 }
