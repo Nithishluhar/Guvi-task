@@ -82,7 +82,7 @@ app.post('/reset', async (req, res) => {
         from: 'nithishns7676@gmail.com',
         to: 'nithishluhar2606@gmail.com',
         subject: 'reset your password',
-        text:` http://localhost:5173/reset_password/${user.id}/${token}`
+        text:`https://endearing-moxie-ba55ba.netlify.app/reset_password/${user.id}/${token}`
       };
       
       transporter.sendMail(mailOptions, function(error, info){

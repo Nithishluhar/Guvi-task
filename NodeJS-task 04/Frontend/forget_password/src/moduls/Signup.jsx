@@ -14,7 +14,7 @@ function Signup() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:4000/register", { name, email, password })
+      .post("https://forget-password-7q2c.onrender.com/register", { name, email, password })
       .then((res) => {
         navigate('/login')
         console.log(res.data.message);

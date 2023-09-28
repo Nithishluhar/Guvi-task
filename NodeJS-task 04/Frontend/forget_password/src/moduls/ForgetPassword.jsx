@@ -11,7 +11,7 @@ function ForgetPassword() {
     const handleSubmit = async(event) => {
       event.preventDefault();
       try {
-          const response = await axios.post('http://localhost:4000/reset',{ email});
+          const response = await axios.post('https://forget-password-7q2c.onrender.com/reset',{ email});
           if (response.data.status === "success") {
             navigate('/login')
           }

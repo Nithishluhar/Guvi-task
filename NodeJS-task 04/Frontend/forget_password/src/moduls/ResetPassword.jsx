@@ -12,7 +12,7 @@ const {id, token} = useParams()
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post(`http://localhost:4000/reset_password/${id}/${token}`, {
+      const response = await axios.post(`https://forget-password-7q2c.onrender.com/${id}/${token}`, {
         password,
       });
       if (response.data.status === "success") {

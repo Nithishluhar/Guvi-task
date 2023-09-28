@@ -13,7 +13,7 @@ function Login({setToken}) {
   const handleSubmit = async(event) => {
     event.preventDefault();
     try {
-        const response = await axios.post('http://localhost:4000/login',{ email,password});
+        const response = await axios.post('https://forget-password-7q2c.onrender.com/login',{ email,password});
         const { token } = response.data;
         setToken(token); // Store the token in your app.js state
         localStorage.setItem('token', token);
