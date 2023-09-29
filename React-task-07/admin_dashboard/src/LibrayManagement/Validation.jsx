@@ -1,15 +1,20 @@
 import * as yup from "yup";
 
 export const basicSchema = yup.object().shape({
-  title: yup.string().trim().min(6, "less than 6 characters").required("Required"),
+  title: yup
+    .string()
+    .trim()
+    .min(6, "less than 6 characters")
+    .required("Required"),
   author_name: yup
     .string()
     .trim()
     .min(5, "less than 5 characters")
     .required("Required ")
     .required("Required"),
-  isbn_number: yup.number()
-   .min(5, " min 5  digits")
+  isbn_number: yup
+    .number()
+    .min(5, " min 5  digits")
     .positive()
     .required("Required"),
   publication_date: yup.date().required(" Date Required"),

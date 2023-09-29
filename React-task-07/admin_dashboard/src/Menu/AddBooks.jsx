@@ -1,5 +1,5 @@
 import { Typography } from "antd";
-import React, { useEffect, useState , useContext } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { useFormik } from "formik";
 import { date } from "yup";
 import { Link, useNavigate, useParams } from "react-router-dom";
@@ -7,18 +7,16 @@ import { basicSchema } from "../LibrayManagement/Validation";
 import { BookContex } from "../LibrayManagement/BookContex";
 
 function AddBookSAuthor() {
-  
   const navigate = useNavigate();
-  const { bookData } = useContext( BookContex);
-  const { setBookData } = useContext( BookContex);
-
+  const { bookData } = useContext(BookContex);
+  const { setBookData } = useContext(BookContex);
 
   const onSubmit = async (values, actions) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     actions.resetForm();
     setBookData([
       ...bookData,
-      { 
+      {
         title: values.title,
         isbn_number: values.isbn_number,
         publication_date: values.publication_date,
@@ -26,12 +24,10 @@ function AddBookSAuthor() {
         birth_date: "",
         biography: "",
       },
-    ]);       
-      navigate("/manageBooks");
-    
-   }
-    
-  
+    ]);
+    navigate("/manageBooks");
+  };
+
   const {
     values,
     errors,
@@ -77,7 +73,9 @@ function AddBookSAuthor() {
             placeholder="Enter Book author_name"
             onChange={handleChange}
             onBlur={handleBlur}
-            className={errors.author_name && touched.author_name ? "input-error" : ""}
+            className={
+              errors.author_name && touched.author_name ? "input-error" : ""
+            }
           />
           {errors.author_name && touched.author_name && (
             <p className="error">{errors.author_name}</p>

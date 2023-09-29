@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 import { BookContex } from "../LibrayManagement/BookContex";
 
 function ManageBooks() {
-  const { bookData } = useContext( BookContex);
-
+  const { bookData } = useContext(BookContex);
 
   return (
     <div>
@@ -29,8 +28,13 @@ function ManageBooks() {
                   <td>{item.author_name}</td>
                   <td>{item.isbn_number}</td>
                   <td>{item.publication_date}</td>
-                  <td style={{background : "violet"}}>
-                    <Link style={{color : "white", textAlign : "center" }}  to={`/edit/${i}`}>Edit</Link>
+                  <td style={{ background: "violet" }}>
+                    <Link
+                      style={{ color: "white", textAlign: "center" }}
+                      to={`/edit/${i}`}
+                    >
+                      Edit
+                    </Link>
                   </td>
                 </tr>
               ))}
