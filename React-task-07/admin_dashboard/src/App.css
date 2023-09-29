@@ -3,7 +3,6 @@
   flex-direction: column;
   height: 100vh;
   width: 100vw;
-
 }
 .AppHeader {
   height: 50px;
@@ -128,8 +127,6 @@ button:disabled {
   margin: 30px;
 }
 
-
-
 .AddBookSAuthor {
   text-align: center;
   padding: 1rem 10rem;
@@ -141,7 +138,6 @@ nav {
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
-  
 }
 nav h3 {
   margin: 1rem;
@@ -149,7 +145,7 @@ nav h3 {
   color: black;
 }
 nav h3:hover {
-  color:  blueviolet;
+  color: blueviolet;
 }
 
 input,
@@ -172,10 +168,7 @@ select:focus {
 input::placeholder,
 select::placeholder {
   color: #a0aec0;
-  
 }
-
-
 
 .formik {
   text-align: center;
