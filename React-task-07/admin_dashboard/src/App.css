@@ -1,0 +1,185 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+
+}
+.AppHeader {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 20px 4px 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.MenuAndContent {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.AppFooter {
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+table {
+  margin-top: 50px;
+  margin-left: 150px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #eddfdf;
+  text-align: left;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+th {
+  background-color: rgb(133, 117, 117);
+  color: white;
+}
+
+tr:nth-child() {
+  background-color: #f2f2f2;
+}
+tr:hover {
+  background-color: rgb(231, 225, 237);
+}
+.card_container {
+  margin: 50px 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: fit-content;
+}
+
+.card {
+  width: 300px;
+  height: auto;
+  padding: 2em;
+  color: #1a202c;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  background-color: rgb(159, 185, 207);
+}
+
+.form-container {
+  text-align: center;
+  padding: 0 7rem;
+}
+
+.error {
+  color: #d22121;
+  font-size: 0.75rem;
+  text-align: left;
+  margin-top: 0.25rem;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form label {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  text-align: left;
+  margin: 1rem 0 0.1rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.65rem 0.5rem;
+  font-size: 1rem;
+  color: white;
+  border: 2px solid #4a5568;
+  background-color: #2d3748;
+  border-radius: 10px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #4299e1;
+}
+
+input::placeholder,
+select::placeholder {
+  color: #a0aec0;
+}
+button:disabled {
+  opacity: 0.35;
+}
+
+.form-container {
+  margin: 30px;
+}
+
+
+
+.AddBookSAuthor {
+  text-align: center;
+  padding: 1rem 10rem;
+  background-color: rgb(208, 217, 225);
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  
+}
+nav h3 {
+  margin: 1rem;
+  cursor: pointer;
+  color: black;
+}
+nav h3:hover {
+  color:  blueviolet;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.65rem 0.5rem;
+  font-size: 1rem;
+  color: white;
+  border: 2px solid #4a5568;
+  background-color: #2d3748;
+  border-radius: 10px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #4299e1;
+}
+
+input::placeholder,
+select::placeholder {
+  color: #a0aec0;
+  
+}
+
+
+
+.formik {
+  text-align: center;
+  padding: 1rem 8rem;
+  background-color: rgb(208, 217, 225);
+  width: 100%;
+}
