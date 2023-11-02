@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Dashboard from "./Menu/Dashboard";
 import ManageBooks from "./Menu/ManageBooks";
 import ManageAuthors from "./Menu/ManageAuthors";

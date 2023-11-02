@@ -28,7 +28,7 @@
 }
 table {
   margin-top: 50px;
-  margin-left: 150px;
+  margin-left: 120px;
   border-collapse: collapse;
   width: 100%;
 }
@@ -46,11 +46,11 @@ th {
   color: white;
 }
 
-tr:nth-child() {
-  background-color: #f2f2f2;
+tr:nth-child(even) {
+  background-color: rgb(201, 214, 180);
 }
 tr:hover {
-  background-color: rgb(231, 225, 237);
+  background-color: rgb(186, 151, 221);
 }
 .card_container {
   margin: 50px 50px;
@@ -169,7 +169,6 @@ input::placeholder,
 select::placeholder {
   color: #a0aec0;
 }
-
 .formik {
   text-align: center;
   padding: 1rem 8rem;
