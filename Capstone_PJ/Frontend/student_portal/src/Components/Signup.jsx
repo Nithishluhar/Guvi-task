@@ -22,7 +22,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/user/register",
+        "https://student-portal-3g2h.onrender.com/user/register",
         formData
       );
       setMsg(response.data.message);

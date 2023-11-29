@@ -7,7 +7,7 @@ const Incomplete = () => {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/task/pending");
+      const res = await axios.get("https://student-portal-3g2h.onrender.com/task/pending");
       setTask(res.data);
       console.log(res.data);
     } catch (err) {
