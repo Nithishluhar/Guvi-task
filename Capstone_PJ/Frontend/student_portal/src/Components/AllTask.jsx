@@ -15,7 +15,7 @@ function AllTask() {
     console.log(link, id);
     try {
       const response = await axios.put(
-        `http://localhost:8000/task/update/${id}`,
+        `https://student-portal-3g2h.onrender.com/task/update/${id}`,
         { link }
       );
       console.log(response.data.data);
@@ -37,7 +37,7 @@ function AllTask() {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/task");
+      const res = await axios.get("https://student-portal-3g2h.onrender.com/task");
       setTask(res.data);
       console.log(res.data);
     } catch (err) {
