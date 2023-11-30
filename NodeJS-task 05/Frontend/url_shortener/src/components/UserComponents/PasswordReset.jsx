@@ -10,7 +10,7 @@ const PasswordReset = () => {
   const [msg, setMsg] = useState("");
   const [error, setError] = useState("");
   const param = useParams();
-  const url = `http://localhost:8000/user/${param.id}/reset_password/${param.token}`;
+  const url = `https://url-shortener-83vp.onrender.com/user/${param.id}/reset_password/${param.token}`;
 
   useEffect(() => {
     const verifyUrl = async () => {

@@ -24,7 +24,7 @@ function Signup() {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/user/register",
+        "https://url-shortener-83vp.onrender.com/user/register",
         formData
       );
       setMsg(response.data.message);

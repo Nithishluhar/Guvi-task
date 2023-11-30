@@ -7,7 +7,7 @@ function List() {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/url/data");
+      const res = await axios.get("https://url-shortener-83vp.onrender.com/url/data");
       setUrlData(res.data);
        console.log(res.data);
     } catch (err) {

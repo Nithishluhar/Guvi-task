@@ -11,7 +11,7 @@ const LinkResult = ({ url }) => {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:8000/url", { url });
+      const res = await axios.post("https://url-shortener-83vp.onrender.com/url", { url });
       setShortenLink(res.data.short_URl);
       console.log(res.data.short_URl);
     } catch (err) {

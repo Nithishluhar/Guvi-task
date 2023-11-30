@@ -7,15 +7,16 @@ function ForgetPass() {
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
   const [error, setError] = useState("");
-  console.log(email);
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = `http://localhost:8000/user/reset`;
+      const url = `https://url-shortener-83vp.onrender.com/user/reset`;
       const  response = await axios.post(url, { email });
       console.log(response.data.message);
       setMsg(response.data.message);
       setError("");
+      console.log(email);
     } catch (error) {
       if (
         error.response &&

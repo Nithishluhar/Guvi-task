@@ -21,7 +21,7 @@ function Login({ setToken }) {
     console.log(formData);
     try {
       const response = await axios.post(
-        "http://localhost:8000/user/login",
+        "https://url-shortener-83vp.onrender.com/user/login",
         formData
       );
       console.log(response.data.data);
