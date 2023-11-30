@@ -37,7 +37,7 @@ function List() {
               res.map((item, i) => (
                 <tr key={i}>
                   <td>{item.redirectURL}</td>
-                  <td>http://localhost:8000/url/{item.shortId}</td>
+                  <td>https://url-shortener-83vp.onrender.com/url/{item.shortId}</td>
                   <td> {item.clicks}</td>
                 </tr>
               ))}

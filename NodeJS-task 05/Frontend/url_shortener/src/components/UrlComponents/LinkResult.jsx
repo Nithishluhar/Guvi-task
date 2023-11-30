@@ -47,8 +47,8 @@ const LinkResult = ({ url }) => {
     <>
       {shortenLink && (
         <div className ="result">
-          <p>http://localhost:8000/url/{shortenLink}</p>
-          <CopyToClipboard text={"http://localhost:8000/url/"+shortenLink} onCopy={() => setCopied(true)}>
+          <p>https://url-shortener-83vp.onrender.com/url/{shortenLink}</p>
+          <CopyToClipboard text={"https://url-shortener-83vp.onrender.com/url/"+shortenLink} onCopy={() => setCopied(true)}>
             <button className={copied ? "copied" : ""}>
               Copy to Clipboard
             </button>
