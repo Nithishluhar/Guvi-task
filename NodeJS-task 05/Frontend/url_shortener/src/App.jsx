@@ -111,10 +111,10 @@ function App() {
             <Link
               to={"/signup"}
               title=""
-              className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-black rounded-full"
+              className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-indigo-800 rounded-full"
               role="button"
             >
-              Sign Up
+            { token ? "✓": "Sign Up⌛"}
             </Link>
           </div>
         </div>
