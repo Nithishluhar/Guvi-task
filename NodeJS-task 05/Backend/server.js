@@ -30,3 +30,5 @@ app.use('/user', passwordRoute);
 
 
 app.listen(PORT, () => console.log(`server in port ${PORT}`))
+
+// module.exports = app;
