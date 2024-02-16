@@ -8,7 +8,7 @@ const EmailVerify = () => {
 	const param = useParams();
     const verifyEmailUrl = async () => {
         try {
-            const url = `https://url-shortener-83vp.onrender.com/user/${param.id}/verify/${param.token}`;
+            const url = `https://url-shortener-two-smoky.vercel.app/${param.id}/verify/${param.token}`;
             const response = await axios.get(url);
             console.log(response.data.message);
             setValidUrl(true);

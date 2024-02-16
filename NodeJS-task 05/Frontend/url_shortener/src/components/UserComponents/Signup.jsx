@@ -24,7 +24,7 @@ function Signup() {
 
     try {
       const response = await axios.post(
-        "https://url-shortener-83vp.onrender.com/user/register",
+        "https://url-shortener-two-smoky.vercel.app/user/register",
         formData
       );
       setMsg(response.data.message);

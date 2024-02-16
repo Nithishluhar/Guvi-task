@@ -11,7 +11,7 @@ function ForgetPass() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = `https://url-shortener-83vp.onrender.com/user/reset`;
+      const url = `https://url-shortener-two-smoky.vercel.app/user/reset`;
       const  response = await axios.post(url, { email });
       console.log(response.data.message);
       setMsg(response.data.message);

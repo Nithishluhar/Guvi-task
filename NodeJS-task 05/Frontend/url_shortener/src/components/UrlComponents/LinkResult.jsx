@@ -11,7 +11,7 @@ const LinkResult = ({ url }) => {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const res = await axios.post("https://url-shortener-83vp.onrender.com/url", { url });
+      const res = await axios.post("https://url-shortener-two-smoky.vercel.app/url", { url });
       setShortenLink(res.data.short_URl);
       console.log(res.data.short_URl);
     } catch (err) {
@@ -47,8 +47,8 @@ const LinkResult = ({ url }) => {
     <>
       {shortenLink && (
         <div className ="result">
-          <p>https://url-shortener-83vp.onrender.com/url/{shortenLink}</p>
-          <CopyToClipboard text={"https://url-shortener-83vp.onrender.com/url/"+shortenLink} onCopy={() => setCopied(true)}>
+          <p>https://url-shortener-two-smoky.vercel.app/url/{shortenLink}</p>
+          <CopyToClipboard text={"https://url-shortener-two-smoky.vercel.app/url/"+shortenLink} onCopy={() => setCopied(true)}>
             <button className={copied ? "copied" : ""}>
               Copy to Clipboard
             </button>

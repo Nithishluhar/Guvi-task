@@ -21,7 +21,7 @@ function Login({ setToken }) {
     console.log(formData);
     try {
       const response = await axios.post(
-        "https://url-shortener-83vp.onrender.com/user/login",
+        "https://url-shortener-two-smoky.vercel.app/user/login",
         formData
       );
       console.log(response.data.data);

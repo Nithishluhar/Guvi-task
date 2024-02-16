@@ -7,9 +7,9 @@ function List() {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get("https://url-shortener-83vp.onrender.com/url/data");
+      const res = await axios.get("https://url-shortener-two-smoky.vercel.app/url/data");
       setUrlData(res.data);
-       console.log(res.data);
+      console.log(res.data);
     } catch (err) {
       console.log(err);
     }
@@ -18,9 +18,9 @@ function List() {
     fetchData();
   }, []);
 
-  const res = urlData.map((item , i) =>{
-    return{ ...item,Length : i ,clicks: item.visitHistory.length}
-  })
+  const res = urlData.map((item, i) => {
+    return { ...item, Length: i, clicks: item.visitHistory.length };
+  });
   return (
     <div className="dataTable">
       <div>
@@ -37,7 +37,9 @@ function List() {
               res.map((item, i) => (
                 <tr key={i}>
                   <td>{item.redirectURL}</td>
-                  <td>https://url-shortener-83vp.onrender.com/url/{item.shortId}</td>
+                  <td>
+                  https://url-shortener-two-smoky.vercel.app/url/{item.shortId}
+                  </td>
                   <td> {item.clicks}</td>
                 </tr>
               ))}

@@ -23,7 +23,7 @@ const Chart = () => {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get("https://url-shortener-83vp.onrender.com/url/data");
+      const res = await axios.get("https://url-shortener-two-smoky.vercel.app/url/data");
       setUrlData(res.data);
       // console.log(res.data);
     } catch (err) {
