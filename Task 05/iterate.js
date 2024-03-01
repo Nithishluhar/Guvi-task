@@ -10,7 +10,7 @@ car1.forEach((e,index)=>{
     console.log(e,"-",index);
 })
 //for in 
-var car2 ={"Name--" :"benz","brand--":"Audi"};
+var car2 ={Name:"benz",brand:"Audi"};
 for (let a in car2) {
     console.log(a);
     console.log(car2[a]);

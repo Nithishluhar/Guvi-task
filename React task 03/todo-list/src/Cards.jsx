@@ -13,7 +13,6 @@ function Cards(props) {
    const handleStatusChange = (e) => {
     onUpdateStatus(index, e.target.value);
     console.log(index, e.target.value);
-    
   };
 
   // for checking
